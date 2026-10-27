@@ -2,6 +2,12 @@
 
 
 # GUI Challenges
+
+> [!NOTE]
+> This is the real, open-source code of gui-challenges. Its home is Forgejo, at
+> https://git.techcraftsmen.net/artur-rios/gui-challenges; the copy on GitHub is a read-only mirror, for viewing only, and
+> its issues and pull requests are not followed. If you want to contribute, email me at
+> arturdev@duck.com.
 > I build interfaces my way, then challenge you to do it your way. 
 With our creative minds combined, 
 **we'll find multiple ways to solve these interfaces 
