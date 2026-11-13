@@ -1,0 +1,13 @@
+{
+  "name": "gui-challenges",
+  "private": true,
+  "description": "The repository's lint (ci/lint.sh); each demo has its own package.json for its build",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.13.0"
+  }
+}
