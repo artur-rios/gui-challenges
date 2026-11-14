@@ -12,6 +12,9 @@ module.exports = {
     postcsseasings(),
     postcssPresetEnv({
       stage: 0,
+      features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
+      },
     }),
   ]
 }

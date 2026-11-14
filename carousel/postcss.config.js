@@ -1,15 +1,18 @@
 const postcssPresetEnv  = require('postcss-preset-env')
 const postcssCustomMedia = require('postcss-custom-media')
+const postcssGlobalData = require('@csstools/postcss-global-data')
 
 module.exports = {
   plugins: [
-    postcssCustomMedia({
-      importFrom: './node_modules/open-props/media.min.css'
+    postcssGlobalData({
+      files: ['./node_modules/open-props/media.min.css']
     }),
+    postcssCustomMedia(),
     postcssPresetEnv({
       stage: 0,
       enableClientSidePolyfills: false,
       features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
         'cascade-layers': false,
         'clamp': false,
         'logical-properties-and-values': false, 

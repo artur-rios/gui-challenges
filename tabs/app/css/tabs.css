@@ -13,7 +13,7 @@ snap-tabs {
   overflow: hidden;
   position: relative;
 
-  & :matches(header, nav, section, article, a) {
+  & :is(header, nav, section, article, a) {
     outline-color: hsl(var(--accent));
     outline-offset: -5px;
   }
@@ -117,7 +117,7 @@ snap-tabs > section {
         color .7s ease,
         border-color .5s ease;
 
-      &:matches(:target,:active,[active]) {
+      &:is(:target,:active,[active]) {
         color: var(--text-active-color);
         border-block-end-color: hsl(var(--accent));
       }

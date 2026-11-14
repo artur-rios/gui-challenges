@@ -1,10 +1,10 @@
 import resolve from '@rollup/plugin-node-resolve'
 import auto from '@rollup/plugin-auto-install'
 import postcss from 'rollup-plugin-postcss'
-import { terser } from 'rollup-plugin-terser'
+import terser from '@rollup/plugin-terser'
 import compiler from '@ampproject/rollup-plugin-closure-compiler'
 import { default as importHTTP } from 'import-http/rollup'
-import babel from 'rollup-plugin-babel'
+import { babel } from '@rollup/plugin-babel'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -23,6 +23,7 @@ const devConfig = {
       inject:  false,
     }),
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**',
       "presets": [
         ["@babel/env", {
@@ -52,6 +53,7 @@ const prodConfig = {
       minimize: { preset: 'default' },
     }),
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**',
       "presets": [
         ["@babel/env", {"modules": false}]

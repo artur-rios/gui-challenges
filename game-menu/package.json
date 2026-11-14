@@ -13,10 +13,10 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "postcss-preset-env": "6.7.x",
-    "vite": "2.x  || >2.0.0-alpha"
+    "postcss-preset-env": "11.6.x",
+    "vite": "8.x"
   },
   "dependencies": {
-    "roving-ux": "^1.0.2"
+    "roving-ux": "^1.0.5"
   }
 }

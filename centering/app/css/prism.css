@@ -15,27 +15,27 @@ pre[class*="language-"] {
 }
 
 .token {
-  &:matches(.property, .keyword, .tag, .function) {
+  &:is(.property, .keyword, .tag, .function) {
     color: var(--blue);
   }
 
-  &:matches(.selector, .attr-name, .operator, .char, .builtin, .inserted) {
+  &:is(.selector, .attr-name, .operator, .char, .builtin, .inserted) {
     color: var(--purple);
   }
 
-  &:matches(.punctuation) {
+  &:is(.punctuation) {
     color: lch(50 0 0);
   }
 
-  &:matches(.attr-value, .string) {
+  &:is(.attr-value, .string) {
     color: lch(90 0 0);
   }
 
-  &:matches(.class-name, .number) {
+  &:is(.class-name, .number) {
     color: var(--pink);
   }
 
-  &:matches(.property, .tag, .function, .comment) {
+  &:is(.property, .tag, .function, .comment) {
     font-style: italic;
   }
 }

@@ -3,7 +3,7 @@ body {
   grid: [stack] 1fr / min-content [stack] 1fr;
 
   @media (max-width: 540px) {
-    & > :matches(aside, main) {
+    & > :is(aside, main) {
       grid-area: stack;
     }
   }
