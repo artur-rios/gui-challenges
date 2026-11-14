@@ -13,6 +13,9 @@ const dev = {
     postcsseasings(),
     postcssPresetEnv({
       stage: 0,
+      features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
+      },
     }),
   ]
 }
@@ -26,6 +29,9 @@ const prod = {
     postcsseasings(),
     postcssPresetEnv({
       stage: 0,
+      features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
+      },
     }),
     cssnano({
       preset: 'default'

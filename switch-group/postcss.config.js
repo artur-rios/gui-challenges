@@ -14,6 +14,7 @@ module.exports = {
       stage: 0,
       enableClientSidePolyfills: false,
       features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
         'cascade-layers': false,
         'clamp': false,
         'logical-properties-and-values': false, 

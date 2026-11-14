@@ -13,12 +13,12 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "postcss-easings": "3.x",
-    "postcss-preset-env": "6.7.x",
-    "vite": "2.x  || >2.0.0-alpha"
+    "postcss-easings": "4.x",
+    "postcss-preset-env": "11.6.x",
+    "vite": "8.x"
   },
   "dependencies": {
-    "blingblingjs": "^2.1.1",
-    "roving-ux": "^1.0.0"
+    "blingblingjs": "^2.3.0",
+    "roving-ux": "^1.0.5"
   }
 }

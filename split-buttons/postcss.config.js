@@ -7,6 +7,7 @@ module.exports = {
     postcssPresetEnv({
       stage: 0,
       features: {
+        'nesting-rules': { edition: '2021', noIsPseudoSelector: true },
         'logical-properties-and-values': false, 
         'prefers-color-scheme-query': false, 
         'gap-properties': false,

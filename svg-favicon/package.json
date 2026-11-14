@@ -13,10 +13,10 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "postcss-preset-env": "7.0.0",
-    "vite": "2.x  || >2.0.0-alpha"
+    "postcss-preset-env": "11.6.2",
+    "vite": "8.x"
   },
   "dependencies": {
-    "blingblingjs": "^2.1.1"
+    "blingblingjs": "^2.3.0"
   }
 }

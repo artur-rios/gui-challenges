@@ -13,10 +13,10 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "postcss-preset-env": "7.8.2",
-    "vite": "3.x"
+    "postcss-preset-env": "11.6.2",
+    "vite": "8.x"
   },
   "dependencies": {
-    "open-props": "^1.4.24"
+    "open-props": "^1.7.23"
   }
 }
